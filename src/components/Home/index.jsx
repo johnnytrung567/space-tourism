@@ -1,9 +1,9 @@
-import { Circle, HFive, Inner, LeftCol, Title, Wrapper } from './Home'
+import { Circle, Container, HFive, LeftCol, Title, Wrapper } from './Home'
 
 const Home = () => {
     return (
-        <Wrapper>
-            <Inner>
+        <Container>
+            <Wrapper>
                 <LeftCol>
                     <HFive>So, you want to travel to</HFive>
                     <Title mt='24px' mb='24px'>
@@ -17,8 +17,8 @@ const Home = () => {
                     </p>
                 </LeftCol>
                 <Circle to='/destination'>Explore</Circle>
-            </Inner>
-        </Wrapper>
+            </Wrapper>
+        </Container>
     )
 }
 export default Home

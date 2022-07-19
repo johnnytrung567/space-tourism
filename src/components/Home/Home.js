@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import backgroundDesktop from '../../assets/home/background-home-desktop.jpg'
 import backgroundTablet from '../../assets/home/background-home-tablet.jpg'
+import backgroundMobile from '../../assets/home/background-home-mobile.jpg'
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
     min-height: 100vh;
     background-image: url(${backgroundDesktop});
     background-repeat: no-repeat;
@@ -13,10 +14,14 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 1070px) {
         background-image: url(${backgroundTablet});
     }
+
+    @media screen and (max-width: 620px) {
+        background-image: url(${backgroundMobile});
+    }
 `
 
-export const Inner = styled.div`
-    padding: 300px 165px 0;
+export const Wrapper = styled.div`
+    padding: 270px 165px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

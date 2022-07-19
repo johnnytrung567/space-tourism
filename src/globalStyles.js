@@ -33,6 +33,18 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    h2 {
+        font-size: 100px;
+
+        @media screen and (max-width: 1070px) {
+            font-size: 80px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 56px;
+        }
+    }
+
     h5 {
         color: #fff;
         font-family: 'Barlow Condensed', sans-serif;

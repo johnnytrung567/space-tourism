@@ -11,6 +11,11 @@ export const EffectBottom = css`
         background-color: #fff;
         opacity: 0;
         transition: 0.3s;
+
+        @media screen and (max-width: 620px) {
+            top: ${({ spanMobile }) =>
+                spanMobile ? `calc(100% + ${spanMobile})` : '100%'};
+        }
     }
 
     &:hover {

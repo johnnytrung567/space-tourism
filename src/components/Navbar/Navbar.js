@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { NavLink, Link } from 'react-router-dom'
-import { EffectBottom } from '../shared/EffectBottom'
+import { NavText } from '../shared/Typography'
 import iconBars from '../../assets/shared/icon-hamburger.svg'
 
 export const Nav = styled.nav`
@@ -77,19 +77,7 @@ export const Menu = styled.div`
 `
 
 export const NavItem = styled(NavLink)`
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    position: relative;
-
-    ${EffectBottom}
-
-    @media screen and (max-width: 1070px) {
-        font-size: 14px;
-    }
+    ${NavText}
 `
 
 export const Num = styled.span`

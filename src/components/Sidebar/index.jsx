@@ -7,7 +7,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <CloseIcon onClick={toggle} />
             <SideMenu>
                 {menuData.map((item, index) => (
-                    <SideItem to={item.link} key={index}>
+                    <SideItem to={item.link} key={index} onClick={toggle}>
                         <Num>{`0${index}`}</Num>
                         {item.title}
                     </SideItem>
