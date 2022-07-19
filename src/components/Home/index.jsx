@@ -1,11 +1,11 @@
-import { Circle, Inner, LeftCol, Title, Wrapper } from './Home'
+import { Circle, HFive, Inner, LeftCol, Title, Wrapper } from './Home'
 
 const Home = () => {
     return (
         <Wrapper>
             <Inner>
                 <LeftCol>
-                    <h5>So, you want to travel to</h5>
+                    <HFive>So, you want to travel to</HFive>
                     <Title mt='24px' mb='24px'>
                         Space
                     </Title>

@@ -22,14 +22,47 @@ export const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-size: 150px;
-        margin-top: ${({ mt }) => (mt ? mt : '0px')};
-        margin-bottom: ${({ mb }) => (mb ? mb : '0px')};
+        
+        @media screen and (max-width: 1070px) {
+            line-height: 150px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 80px;
+            line-height: 100px;
+        }
     }
 
     h5 {
+        color: #fff;
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 28px;
         letter-spacing: 4.75px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 1070px) {
+            font-size: 20px;
+            letter-spacing: 3.38px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 16px;
+            letter-spacing: 2.7px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+
+        @media screen and (max-width: 1070px) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 15px;
+            line-height: 25px;
+        }
     }
 `

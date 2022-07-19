@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import backgroundDesktop from '../../assets/home/background-home-desktop.jpg'
+import backgroundTablet from '../../assets/home/background-home-tablet.jpg'
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -8,6 +9,10 @@ export const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: 1070px) {
+        background-image: url(${backgroundTablet});
+    }
 `
 
 export const Inner = styled.div`
@@ -15,15 +20,38 @@ export const Inner = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media screen and (max-width: 1070px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 202px 0 0;
+    }
+
+    @media screen and (max-width: 620px) {
+        padding: 112px 24px 0;
+    }
 `
 
 export const LeftCol = styled.div`
-    width: 450px;
+    max-width: 450px;
+
+    @media screen and (max-width: 1070px) {
+        text-align: center;
+    }
+`
+
+export const HFive = styled.h5`
+    color: #d0d6f9;
 `
 
 export const Title = styled.h1`
     margin-top: 24px;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 620px) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
 `
 
 export const Circle = styled(Link)`
@@ -32,6 +60,7 @@ export const Circle = styled(Link)`
     border-radius: 50%;
     font-family: Bellefair, serif;
     font-size: 32px;
+    letter-spacing: 2px;
     background-color: #fff;
     color: #0b0d17;
     text-decoration: none;
@@ -60,6 +89,30 @@ export const Circle = styled(Link)`
             width: 450px;
             height: 450px;
             opacity: 0.1;
+
+            @media screen and (max-width: 1070px) {
+                width: 400px;
+                height: 400px;
+            }
+
+            @media screen and (max-width: 620px) {
+                width: 250px;
+                height: 250px;
+            }
         }
+    }
+
+    @media screen and (max-width: 1070px) {
+        margin-top: 156px;
+        margin-bottom: 90px;
+    }
+
+    @media screen and (max-width: 620px) {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        letter-spacing: 1.25px;
+        margin-top: 81px;
+        margin-bottom: 48px;
     }
 `

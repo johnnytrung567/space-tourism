@@ -1,8 +1,8 @@
-import { Logo, Nav, Menu, NavItem, Num, Line } from './Navbar'
+import { Logo, Nav, Menu, NavItem, Num, Line, Bars } from './Navbar'
 import menuData from '../../Data/menuData'
 import logo from '../../assets/shared/logo.svg'
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
     return (
         <Nav>
             <Logo to='/'>
@@ -17,6 +17,7 @@ const Navbar = () => {
                     </NavItem>
                 ))}
             </Menu>
+            <Bars onClick={toggleSidebar} />
         </Nav>
     )
 }
