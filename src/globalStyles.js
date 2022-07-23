@@ -45,6 +45,31 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    h3 {
+        font-size: 56px;
+
+        @media screen and (max-width: 1070px) {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 24px;
+        }
+    }
+
+    h4 {
+        font-size: 32px;
+        opacity: 0.5;
+
+        @media screen and (max-width: 1070px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 16px;
+        }
+    }
+
     h5 {
         color: #fff;
         font-family: 'Barlow Condensed', sans-serif;
@@ -75,6 +100,44 @@ export const GlobalStyle = createGlobalStyle`
         @media screen and (max-width: 620px) {
             font-size: 15px;
             line-height: 25px;
+        }
+    }
+
+    /* React slick */
+    .slick-dots {
+        text-align: left;
+        bottom: 45px;
+
+        li {
+            &:hover {
+                opacity: 0.5;
+            }
+
+            button::before {
+                font-size: 15px;
+                color: #fff;
+                opacity: 0.175;
+
+                @media screen and (max-width: 1070px) {
+                    font-size: 10px;
+                }
+            }
+
+            &.slick-active {
+                button::before {
+                    opacity: 1;
+                    color: #fff;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1070px) {
+            text-align: center;
+            bottom: 572px;
+        }
+
+        @media screen and (max-width: 620px) {
+            top: 275px;
         }
     }
 `
