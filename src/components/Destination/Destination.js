@@ -114,7 +114,6 @@ export const Info = styled.div`
 export const InfoMenu = styled.ul`
     list-style: none;
     display: flex;
-    gap: 36px;
 
     @media screen and (max-width: 1070px) {
         justify-content: center;
@@ -125,6 +124,10 @@ export const InfoItem = styled.li`
     ${NavText};
     color: #d0d6f9;
     cursor: pointer;
+    margin-right: 36px;
+    &:last-of-type {
+        margin-right: 0;
+    }
 
     @media screen and (max-width: 1070px) {
         font-size: 16px;
@@ -134,6 +137,7 @@ export const InfoItem = styled.li`
     @media screen and (max-width: 620px) {
         font-size: 14px;
         letter-spacing: 2.36px;
+        margin-right: 26.5px;
     }
 `
 
