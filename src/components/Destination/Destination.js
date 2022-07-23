@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
         max-width: 100%;
         margin: 0;
         padding-top: 136px;
-        padding-left: 38.5px;
+        padding-left: 0;
         padding-bottom: 62px;
     }
 
@@ -44,6 +44,14 @@ export const Wrapper = styled.div`
 `
 
 export const HeadingFive = styled(HFiveWithNum)`
+    @media screen and (max-width: 1070px) {
+        margin-left: 38.5px;
+    }
+
+    @media screen and (max-width: 620px) {
+        margin-left: 0px;
+    }
+
     span {
         margin-right: 28px;
 
